@@ -1,0 +1,169 @@
+body {
+    width: 1440px;
+    height: 1024px;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+
+.container1 {
+    height: 500px;
+    width: 720px; 
+    margin-left: 85px;
+    margin-bottom: 290px;
+    color: rgb(255, 255, 255);
+}
+
+.container1 h1, .container1 h2, .container1 h3 {
+    text-align: left; 
+    margin: 20px; 
+    font-size: 32px;
+}
+
+
+.container1 p {
+    text-align: left;
+    font-size: 16px;
+    margin: 20px;
+    font-weight: 100;
+      
+}
+.b1,.b2,.b3,.b4,.b5,.b6,.b7,.b8 {
+    transition-property: transform;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+}
+
+.b1:hover,.b2:hover,.b3:hover,.b4:hover,.b5:hover,.b6:hover,.b7:hover,.b8:hover{
+    transform: translateY(-10px);
+}
+
+
+
+.container1 img {
+    width: 48px; 
+    margin: 20px; 
+}
+
+
+.logo {
+    margin-left: 160px; 
+    
+}
+
+.logo img {
+    width: 540px; 
+    height: 420px; 
+    object-fit: cover;
+}
+
+
+.email {
+    color: rgb(255, 255, 255); 
+    font-size: 32px; 
+    text-align: center; 
+    margin-top: 20px;
+    margin-bottom: 240px;
+    transform: color;
+    
+}
+.email:hover{
+    color: rgb(102, 102, 231);
+}
+
+a {
+    text-decoration: none;     
+}
+
+@media (min-width: 1440px) and (min-height: 1024px) {
+    body {
+        width: 1440px;
+        height: 1024px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .container1 {
+        width: 720px;
+        margin-left: 85px;
+        margin-bottom: 290px;
+    }
+
+    .logo img {
+        width: 540px;
+        height: 420px;
+    }
+
+    .email {
+        margin-top: 20px;
+        margin-bottom: 240px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    body {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .container1 {
+        width: 90%;
+        margin-left: 5%;
+        margin-bottom: 20px;
+    }
+
+    .container1 h1, .container1 h2, .container1 h3 {
+        font-size: 20px;
+    }
+
+    .container1 p {
+        font-size: 14px;
+    }
+
+    .logo {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .logo img {
+        width: 80%;
+        height: auto;
+    }
+
+    .email {
+        font-size: 20px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container1 h1, .container1 h2, .container1 h3 {
+        font-size: 18px;
+    }
+
+    .container1 p {
+        font-size: 12px;
+    }
+
+    .logo img {
+        width: 70%;
+    }
+
+    .email {
+        font-size: 18px;
+    }
+}
+
